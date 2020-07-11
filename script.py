@@ -21,8 +21,7 @@ def make_sync(commit, source_path, target_path):
     os.makedirs(target_path,exist_ok=True)
     sync(source_path, target_path, 'sync') 
     
-    if commit:
-        make_commit(target_path)
+    make_commit(target_path)
 
 if __name__ == '__main__':
     
